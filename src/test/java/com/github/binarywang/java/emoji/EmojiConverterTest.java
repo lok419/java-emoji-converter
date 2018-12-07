@@ -43,12 +43,12 @@ public class EmojiConverterTest {
 
     @Test
     public void testToUnicode() {
-        String str = "   :smiley: :grinning: :wink:";
+        String str = "\uE412\uE409\uE40D\uE107\uE403\uE40E";
         String result = this.emojiConverter.toUnicode(str);
         this.logger.info(str);
         this.logger.info("EmojiConverterTest.testToUnicode()=====>");
         this.logger.info(result);
-        assertEquals("🙅 🙆 💑 😃 😀 😉", result);
+        assertEquals("\uD83D\uDE02\uD83D\uDE1D\uD83D\uDE33\uD83D\uDE31\uD83D\uDE14\uD83D\uDE12", result);
     }
 
 }

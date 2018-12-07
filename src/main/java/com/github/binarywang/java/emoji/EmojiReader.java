@@ -88,6 +88,10 @@ public class EmojiReader {
                                 part.replaceAll(TRIM_PATTERN, ""), 16));
                         }
                     } else {
+
+                        if(fromValue.contains(">"))
+                            continue;
+
                         fromCodePoints.add(Integer.parseInt(
                             fromValue.replaceAll(TRIM_PATTERN, ""), 16));
                     }
